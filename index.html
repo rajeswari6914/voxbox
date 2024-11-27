@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOXBOX</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script defer src="./fill.js"></script>
+    <link rel="icon" type="image/x-icon" href="./pp.png">
+</head>
+<body>
+    <header onmouseover="rmimg()">
+        <img src="./pp.png" height="60px" class="logo" onclick="home()" onmouseover="pdis()">
+        <div class="pdis" onmouseover="pdis()"></div>
+        <nav onmouseover="pdis()">
+            <a href="./lgbx.html" class="reveal" onclick="loli(0)">Login</a>
+            <a href="#search" class="reveal" onclick="loli(1)">Search</a>
+            <a href="#about" class="reveal" onclick="loli(2)">About</a>
+            <a href="#home" class="reveal active" onclick="loli(3)">Home</a>
+        </nav>
+        <div class="panel"  onmouseover="panel()">
+            <img src="./share.png" class="pimg">
+        </div>
+        <div class="wpanel">
+            <img src="./whin.png" class="ppimg p1" onclick="share(0)">
+            <img src="./f.png" class="ppimg p2" onclick="share(1)">
+            <img src="./tw.png" class="ppimg p3" onclick="share(2)">
+        </div>
+        <div class="ppanel"></div>
+    </header>
+    <section id="discover">
+        <div class="outer-wrapper" onmouseover="cpanel()">
+            <div class="wrapper">
+              <div class="slide one" id="home" onmouseover="loli(3)">
+                <div class="on" onmouseover="adimg()" onclick="mpopen()"></div>
+                <div class="smblk" onclick="mpopen()"></div>
+              </div>
+              <div class="slide two" id="search" onmouseover="ripmimg()">
+                <div class="lgd">
+                    <form>
+                        <div class="tf">
+                            <input type="text" placeholder="Song Name" class="lrp">
+                        </div>
+                    </form>
+                </div>
+                <div class="ico">
+                    <div class="cont">
+                        <div onclick="msop(0)"  class="ic q">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(1)"  class="ic w">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(2)"  class="ic e">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(3)"  class="ic r">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(4)"  class="ic t">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div onclick="msop(5)"  class="ic y">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(6)"  class="ic u">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(7)"  class="ic i">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(8)"  class="ic o">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                        <div onclick="msop(9)"  class="ic p">
+                            <img src="play2.png" class="playbtn">
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" onmouseover="rrmimg()">
+        <div class="bubbles">
+            <img src="./bubble.png" >
+            <img src="./bubble.png" >
+            <img src="./bubble.png" >
+            <img src="./bubble.png" >
+            <img src="./bubble.png" >
+            <img src="./bubble.png" >
+            <img src="./bubble.png" >
+           </div>
+        <div class="c1">
+            <h1 class="hg1">ABOUT VOXBOX</h1>
+            <p>Here, you can search and find your favourite music</p>
+            <p>on multiple genres, artists, albums etc.</p>
+        </div>
+        <div class="c2">
+            <h1 class="hg2">ABOUT DEV</h1>
+            <div class="container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                         <img src="./pr1.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size: 32px; letter-spacing: 2px;">PRATYUT</h1>
+                            <p>C.S. Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

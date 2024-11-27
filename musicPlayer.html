@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="./musicStyle.css">
+    <link rel="icon" type="image/x-icon" href="./pp.png">
+    <script defer src="./Music.js"></script>
+</head>
+<body>
+    <div class="cov">
+        <header>
+            <nav>
+                <a class="fl"><img src="./lt.png" class="rtn" onclick="history.back()"></a>
+            </nav>
+        </header>
+        <div><img src="./cd1.png" class="disk"></div>
+        <div class="ico"></div>
+        <div class="visualizer-container"></div>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+          </div>
+        <div class="pl">
+            <div class="sc">
+                <input type="range" min="0" max="1000" value="0" class="s" id="mr">
+              </div>
+            <div><img src="./oh.png" class="oh" onclick="lik()"></div>
+            <div class="iih"><img src="./ih.png" class="ih" onclick="lik()"></div>
+            <div><img src="./bac.png" class="bac" onclick="back()"></div>
+            <div><img src="./play.png" class="plimg" onclick="plpa()"></div>
+            <div><img src="./nex.png" class="nex" onclick="next()"></div>
+            <div><img src="./sou.png" class="sou" onclick="vol()"></div>
+        </div>
+        <audio class="mysong">
+            <source src="./closer.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</body>
+</html>
